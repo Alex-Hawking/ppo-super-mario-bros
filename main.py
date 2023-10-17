@@ -58,6 +58,11 @@ start = 5000
 # Show output in console
 verbose = False
 
+# IMPORTANT
+
+# To set what level and world you want to train on you must set it in the gym.make statement, in the format SuperMarioBros-world-level-v0 
+# More info here: https://pypi.org/project/gym-super-mario-bros/
+
 ##################################################################################
 
 import gym
@@ -71,9 +76,9 @@ from src.utils import load_checkpoint
 
 # Set up environment for pre-processing
 if show_game:
-    env = gym.make('SuperMarioBros-v0', apply_api_compatibility=True, render_mode="human")
+    env = gym.make('SuperMarioBros-1-1-v0', apply_api_compatibility=True, render_mode="human")
 else:
-    env = gym.make('SuperMarioBros-v0', apply_api_compatibility=True)
+    env = gym.make('SuperMarioBros-1-1-v0', apply_api_compatibility=True)
 env = JoypadSpace(env, [["right"], ["right", "A"]])
 env = SkipFrame(env, skip=4)
 env = GrayScaleObservation(env)
