@@ -61,6 +61,10 @@ Follow these steps to get up and running:
     │ | ├── checkpoints/
     ```
 
+6. **Device setup**
+
+    Ensure you device is correctly set by following the steps at the stop of `src/agent.py`
+
 ## Usage
 
 After you've installed the prerequisites and have you directory set up correctly, you can run the agent:
