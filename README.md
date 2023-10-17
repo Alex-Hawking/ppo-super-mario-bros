@@ -75,4 +75,6 @@ python main.py
 
 This will begin training a model using the default hyperparameters. However you can make changes to the hyperparameters and functionality of the model by changing variables located at the top of `main.py`.
 
+I have included a partially trained model in the checkpoints folder, it should be able to complete level 1 :)
+
 To understand what these do and how they work I would recommending reading the short report I wrote on PPO and its implementation in Super Mario Bros.
